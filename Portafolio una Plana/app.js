@@ -81,3 +81,12 @@ function posicionCarrusel() {
         }
     } 
 }
+setInterval(() =>
+{
+    actual += 1;
+    if (actual == proyectos.length){
+        actual = 0;
+    }
+    actualizarCarrusel();
+}, 5000
+)
